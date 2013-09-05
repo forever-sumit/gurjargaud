@@ -43,4 +43,7 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
- gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
+
+# To stop assets log on development server console
+gem 'quiet_assets', group: :development
