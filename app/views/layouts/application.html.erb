@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Gurjar</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gurjargaud Matrimonial Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<%= yield %>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <style type="text/css" id="enject"></style>
 
-</body>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render partial: 'layouts/header' %>
+    <%= render partial: 'layouts/repeat_images' %>
+    <%= yield %>
+    <%= render partial: 'layouts/footer' %>
+
+    <!--include js files and application.js -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  </body>
 </html>
