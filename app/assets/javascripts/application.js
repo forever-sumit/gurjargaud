@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require bootstrap.min
+//= require bootstrap-tooltip
+//= require bootstrap-popover
+//= require business_ltd_1.0
+// require_tree .
